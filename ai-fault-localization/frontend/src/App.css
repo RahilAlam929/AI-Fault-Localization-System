@@ -1,0 +1,306 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f5f7fb;
+  color: #172033;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+button, textarea {
+  font: inherit;
+}
+
+.topbar {
+  height: 76px;
+  padding: 0 7%;
+  background: #ffffff;
+  border-bottom: 1px solid #e8ebf2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.brand-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  background: #243fbd;
+  color: white;
+  font-weight: 800;
+  font-size: 22px;
+}
+
+.brand h2 {
+  margin: 0;
+  font-size: 19px;
+}
+
+.brand span {
+  color: #7d8799;
+  font-size: 12px;
+}
+
+.status {
+  color: #647087;
+  font-size: 13px;
+}
+
+.status-dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin-right: 7px;
+  border-radius: 50%;
+  background: #20b879;
+}
+
+.container {
+  max-width: 1050px;
+  margin: 0 auto;
+  padding: 55px 24px;
+}
+
+.hero {
+  margin-bottom: 34px;
+}
+
+.eyebrow {
+  color: #5369d8;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.6px;
+}
+
+.hero h1 {
+  margin: 12px 0;
+  font-size: clamp(30px, 5vw, 44px);
+  letter-spacing: -1.5px;
+}
+
+.hero > p:last-child {
+  max-width: 600px;
+  color: #68748a;
+  line-height: 1.7;
+}
+
+.workspace, .issue-card {
+  background: white;
+  border: 1px solid #e4e8f0;
+  border-radius: 15px;
+  box-shadow: 0 8px 30px rgba(20, 35, 75, 0.04);
+}
+
+.workspace {
+  padding: 24px;
+}
+
+.section-heading, .editor-footer, .results-heading, .issue-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.section-heading h3, .results-heading h2 {
+  margin: 0;
+}
+
+.section-heading p {
+  color: #7c8799;
+  font-size: 13px;
+}
+
+.language-tag {
+  background: #eef1ff;
+  color: #4559c8;
+  padding: 7px 11px;
+  border-radius: 7px;
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.code-editor {
+  display: block;
+  width: 100%;
+  min-height: 260px;
+  resize: vertical;
+  padding: 20px;
+  margin-top: 15px;
+  border: 1px solid #293650;
+  border-radius: 10px;
+  background: #111827;
+  color: #d9e4ff;
+  font-family: "SFMono-Regular", Consolas, monospace;
+  font-size: 14px;
+  line-height: 1.8;
+  outline: none;
+}
+
+.code-editor:focus {
+  border-color: #6578ed;
+}
+
+.editor-footer {
+  margin-top: 17px;
+  color: #8992a2;
+  font-size: 12px;
+}
+
+.analyze-button {
+  padding: 12px 20px;
+  border: 0;
+  border-radius: 8px;
+  background: #344bc4;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.analyze-button:hover {
+  background: #253ba9;
+}
+
+.analyze-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.results {
+  margin-top: 38px;
+}
+
+.results-heading {
+  margin-bottom: 20px;
+}
+
+.issue-count {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  color: #68748a;
+  font-size: 12px;
+}
+
+.issue-count strong {
+  color: #263da9;
+  font-size: 26px;
+}
+
+.issue-list {
+  display: grid;
+  gap: 14px;
+}
+
+.issue-card {
+  padding: 20px;
+}
+
+.issue-top h3 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.severity {
+  padding: 6px 10px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.severity.high {
+  background: #ffe9e9;
+  color: #c13e3e;
+}
+
+.severity.medium {
+  background: #fff3dc;
+  color: #a56b12;
+}
+
+.line-number {
+  color: #66738a;
+  font-size: 12px;
+}
+
+.detail, .suggestion {
+  padding: 12px 14px;
+  margin-top: 12px;
+  border-radius: 8px;
+  background: #f5f7fb;
+}
+
+.suggestion {
+  background: #eef5ff;
+}
+
+.detail strong, .suggestion strong {
+  font-size: 12px;
+}
+
+.detail p, .suggestion p {
+  margin-bottom: 0;
+  color: #59657a;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.error-message {
+  padding: 18px;
+  margin-top: 20px;
+  border: 1px solid #f0b7b7;
+  border-radius: 10px;
+  background: #fff1f1;
+  color: #a32e2e;
+}
+
+.error-message p {
+  font-size: 13px;
+}
+
+.success-message {
+  padding: 25px;
+  border: 1px solid #b9e8d0;
+  border-radius: 10px;
+  background: #effbf5;
+}
+
+.success-message p {
+  color: #547565;
+  font-size: 13px;
+}
+
+footer {
+  padding-top: 40px;
+  color: #99a1b0;
+  text-align: center;
+  font-size: 12px;
+}
+
+@media (max-width: 600px) {
+  .topbar {
+    padding: 0 18px;
+  }
+
+  .status {
+    font-size: 11px;
+  }
+
+  .container {
+    padding: 35px 15px;
+  }
+
+  .workspace {
+    padding: 16px;
+  }
+}
